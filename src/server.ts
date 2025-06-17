@@ -52,5 +52,8 @@ server.addPrompt({
 });
 
 server.start({
-  transportType: "stdio",
+  transportType: "httpStream",
+  httpStream: {
+    port: 8080,
+  },
 });
